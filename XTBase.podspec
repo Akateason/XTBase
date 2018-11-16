@@ -6,13 +6,14 @@ Pod::Spec.new do |s|
   s.description  = "iOS rapid utils from XTlib."                   
   s.homepage     = "https://github.com/Akateason/XTBase"
   s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.author       = { "teason" => "akateason@qq.com" }  
+  s.author       = { "teason" => "akateason@hotmail.com" }  
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/Akateason/XTlib.git", :tag => s.version }
 
 
   s.source_files = "XTBase/XTBase/**/**/**/*.{h,m}","XTBase/XTBase/**/*.{h,m}","XTBase/XTBase/**/**/*.{h,m}"
   s.public_header_files = "XTBase/XTBase/**/**/**/*.h","XTBase/XTBase/**/**/*.h","XTBase/XTBase/**/*.h"
+  
   s.dependency "ReactiveObjC"
   s.dependency "Masonry"
   s.dependency "SDWebImage"
