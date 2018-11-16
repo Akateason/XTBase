@@ -22,8 +22,7 @@ Pod::Spec.new do |s|
 
 
   s.source_files = "XTBase/XTBase","XTBase/XTBase/**/*.{h,m}","XTBase/XTBase/**/**/*.{h,m}"
-  s.public_header_files = "XTBase/XTBase/*.h","XTBase/XTBase/header/*.h","XTBase/XTBase/**/**/*.h"  
-  s.dependency "XTColor"
+  s.public_header_files = "XTBase/XTBase/*.h","XTBase/XTBase/header/*.h","XTBase/XTBase/**/**/*.h"    
   s.dependency "ReactiveObjC"
   s.dependency "Masonry"
   s.dependency "SDWebImage"
