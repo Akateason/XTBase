@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   
 
   s.name         = "XTBase"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "base of XTBase"
   s.description  = <<-DESC
                    DESC
