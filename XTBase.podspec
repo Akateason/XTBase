@@ -8,11 +8,11 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "teason" => "akateason@hotmail.com" }  
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/Akateason/XTlib.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/Akateason/XTBase.git", :tag => s.version }
 
 
-  s.source_files = "XTBase/**/**/**/*.{h,m}","XTBase/**/*.{h,m}","XTBase/**/**/*.{h,m}"
-  s.public_header_files = "XTBase/**/**/**/*.h","XTBase/**/**/*.h","XTBase/**/*.h"
+  s.source_files = "XTBase/XTBase/**/*.{h,m}","XTBase/XTBase/**/**/*.{h,m}"
+  s.public_header_files = "XTBase/XTBase/**/**/*.h","XTBase/XTBase/**/*.h"
   
   s.dependency "ReactiveObjC"
   s.dependency "Masonry"
