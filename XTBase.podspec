@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Akateason/XTlib.git", :tag => s.version }
 
 
-  s.source_files = "XTBase/XTBase/**/*.{h,m}","XTBase/XTBase/**/**/*.{h,m}"
-  s.public_header_files = "XTBase/XTBase/**/**/*.h","XTBase/XTBase/header/*.h"
+  s.source_files = "XTBase/XTBase/**/**/**/*.{h,m}","XTBase/XTBase/**/*.{h,m}","XTBase/XTBase/**/**/*.{h,m}"
+  s.public_header_files = "XTBase/XTBase/**/**/**/*.h","XTBase/XTBase/**/**/*.h","XTBase/XTBase/**/*.h"
   s.dependency "ReactiveObjC"
   s.dependency "Masonry"
   s.dependency "SDWebImage"
