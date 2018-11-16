@@ -26,4 +26,4 @@ Pod::Spec.new do |s|
   s.dependency "SVProgressHUD"
   s.dependency "UITableView+FDTemplateLayoutCell"
 
-send
+end
