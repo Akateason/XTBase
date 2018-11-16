@@ -1,0 +1,6 @@
+framework module Pods_XTBase {
+  umbrella header "Pods-XTBase-umbrella.h"
+
+  export *
+  module * { export * }
+}
