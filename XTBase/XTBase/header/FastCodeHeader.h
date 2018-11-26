@@ -16,10 +16,10 @@
 //
 // Images
 //
-#define QiNiuIMAGE_WITH_PHONE_WID(STR, W) [STR stringByAppendingString:[NSString stringWithFormat:@"?imageView/2/w/%@", @(W)]]
+#define QiNiuIMAGE_WITH_PHONE_WID(STR, W)   [STR stringByAppendingString:[NSString stringWithFormat:@"?imageView/2/w/%@", @(W)]]
 // get scale 2x
-#define GET_IMAGE_SIZE_SCALE2x(_size_) CGSizeMake(_size_.width * 2., _size_.height * 2.)
-
+#define GET_IMAGE_SIZE_SCALE2x(_size_)      CGSizeMake(_size_.width * 2., _size_.height * 2.)
+#define XT_GET_IMAGE_SIZE_SCALE2x(_size_)   GET_IMAGE_SIZE_SCALE2x(_size_)
 
 //-----------------------------------------------------------------------------//
 //
@@ -119,25 +119,37 @@
 #define USERDEFAULT_GET_VAL(key) \
     [[NSUserDefaults standardUserDefaults] objectForKey:key]
 
+#define XT_USERDEFAULT_GET_VAL(key)     USERDEFAULT_GET_VAL(key)
+
+
 #define USERDEFAULT_SET_VAL(value, key)                                 \
     [[NSUserDefaults standardUserDefaults] setObject:value forKey:key]; \
     [[NSUserDefaults standardUserDefaults] synchronize];
 
+#define XT_USERDEFAULT_SET_VAL(value, key)     USERDEFAULT_SET_VAL(value, key)
+
+
 #define USERDEFAULT_DELTE_VAL(key)                                  \
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:key]; \
     [[NSUserDefaults standardUserDefaults] synchronize];
+
+#define XT_USERDEFAULT_DELTE_VAL(key)          USERDEFAULT_DELTE_VAL(key)
 //-----------------------------------------------------------------------------//
 //
 // WEAK STRONG SELF
 //
 #define WEAK_SELF __weak typeof(self) weakSelf     = self;
 #define STRONG_SELF __strong typeof(weakSelf) self = weakSelf;
+
+#define XT_WEAKIFY(_a_)     __weak typeof(_a_) weakSelf     = _a_;
+#define XT_STRONGIFY(_a_)   __strong typeof(weakSelf) _a_   = weakSelf;
 //
 //-----------------------------------------------------------------------------//
 //
-// string format
+// STRING_FORMAT
 //
 #define STR_FORMAT(format, ...) [NSString stringWithFormat:(format), ##__VA_ARGS__]
+#define XT_STR_FORMAT(format, ...) [NSString stringWithFormat:(format), ##__VA_ARGS__]
 //
 //-----------------------------------------------------------------------------//
 //
@@ -178,13 +190,54 @@
         return __singleton__;                                                   \
     }
 
-//+ (id)copyWithZone:(struct _NSZone *)zone {                                 \
-//return  __singleton__;                                                  \
-//}                                                                           \
-//+ (id)mutableCopyWithZone:(struct _NSZone *)zone {                          \
-//return __singleton__;                                                   \
-//}                                                                           \
+//  + (id)copyWithZone:(struct _NSZone *)zone {                                 \
+//      return  __singleton__;                                                  \
+//  }                                                                           \
+//  + (id)mutableCopyWithZone:(struct _NSZone *)zone {                          \
+//      return __singleton__;                                                   \
+//  }                                                                           \
 //-----------------------------------------------------------------------------//
-
+//
+//  auto ENCODE DECODE
+// encodeWithCoder
+#define XT_encodeWithCoderRuntimeCls(A) \
+\
+- (void)encodeWithCoder:(NSCoder *)encoder \
+{ \
+unsigned int count = 0;\
+Ivar *ivars = class_copyIvarList([A class], &count);\
+for (int i = 0; i<count; i++) {\
+Ivar ivar = ivars[i];\
+const char *name = ivar_getName(ivar);\
+NSString *key = [NSString stringWithUTF8String:name];\
+id value = [self valueForKey:key];\
+[encoder encodeObject:value forKey:key];\
+}\
+free(ivars);\
+} \
+\
+//
+// initWithCoder
+#define XT_initWithCoderRuntimeCls(A) \
+\
+- (id)initWithCoder:(NSCoder *)decoder \
+{ \
+if (self = [super init]) {\
+unsigned int count = 0;\
+Ivar *ivars = class_copyIvarList([A class], &count);\
+for (int i = 0; i<count; i++) {\
+Ivar ivar = ivars[i];\
+const char *name = ivar_getName(ivar);\
+NSString *key = [NSString stringWithUTF8String:name];\
+id value = [decoder decodeObjectForKey:key];\
+[self setValue:value forKey:key];\
+}\
+free(ivars);\
+}\
+return self;\
+} \
+\
+//
+//-----------------------------------------------------------------------------//
 
 #endif /* FastCodeHeader_h */
