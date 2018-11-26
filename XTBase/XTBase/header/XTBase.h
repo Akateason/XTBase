@@ -59,6 +59,7 @@
 #import "NSDictionary+XT.h"
 
 // Util
+#import "XTMutableArray.h"
 #import "NSString+MD5.h"
 #import "Base64.h"
 #import "PlistUtil.h"
