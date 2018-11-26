@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F80A41721AC05F400FA720C /* XTThreadSafeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F80A41621AC05F400FA720C /* XTThreadSafeObject.m */; };
+		8F80A41A21AC070A00FA720C /* XTMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F80A41921AC070A00FA720C /* XTMutableArray.m */; };
 		8F89E830219E926C009B3281 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E7BD219E926C009B3281 /* NSString+MD5.m */; };
 		8F89E831219E926C009B3281 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E7C0219E926C009B3281 /* Base64.m */; };
 		8F89E832219E926C009B3281 /* UIFont+FontAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E7C3219E926C009B3281 /* UIFont+FontAdapter.m */; };
@@ -66,6 +68,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F80A41521AC05F400FA720C /* XTThreadSafeObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTThreadSafeObject.h; sourceTree = "<group>"; };
+		8F80A41621AC05F400FA720C /* XTThreadSafeObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTThreadSafeObject.m; sourceTree = "<group>"; };
+		8F80A41821AC070A00FA720C /* XTMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTMutableArray.h; sourceTree = "<group>"; };
+		8F80A41921AC070A00FA720C /* XTMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTMutableArray.m; sourceTree = "<group>"; };
 		8F89E7BC219E926C009B3281 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		8F89E7BD219E926C009B3281 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		8F89E7BF219E926C009B3281 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
@@ -211,6 +217,17 @@
 				FB30FE23562936057118B3A1 /* Pods-XTBase.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F80A41421AC05B300FA720C /* XTThreadSafeList */ = {
+			isa = PBXGroup;
+			children = (
+				8F80A41521AC05F400FA720C /* XTThreadSafeObject.h */,
+				8F80A41621AC05F400FA720C /* XTThreadSafeObject.m */,
+				8F80A41821AC070A00FA720C /* XTMutableArray.h */,
+				8F80A41921AC070A00FA720C /* XTMutableArray.m */,
+			);
+			path = XTThreadSafeList;
 			sourceTree = "<group>";
 		};
 		8F89E7B8219E926C009B3281 /* XTBase */ = {
@@ -379,6 +396,9 @@
 		8F89E804219E926C009B3281 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				8F89E80E219E926C009B3281 /* XTVerification */,
+				8F89E81A219E926C009B3281 /* XTJson */,
+				8F80A41421AC05B300FA720C /* XTThreadSafeList */,
 				8F89E805219E926C009B3281 /* NSDictionary+XT.h */,
 				8F89E817219E926C009B3281 /* NSDictionary+XT.m */,
 				8F89E806219E926C009B3281 /* NSObject+Reflection.h */,
@@ -397,8 +417,6 @@
 				8F89E80C219E926C009B3281 /* NSDate+XTTick.m */,
 				8F89E80D219E926C009B3281 /* NSString+Extend.h */,
 				8F89E818219E926C009B3281 /* NSString+Extend.m */,
-				8F89E80E219E926C009B3281 /* XTVerification */,
-				8F89E81A219E926C009B3281 /* XTJson */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -652,6 +670,7 @@
 				8FE27323219E78C6009DA0CE /* main.m in Sources */,
 				8F89E847219E926C009B3281 /* RootTableView.m in Sources */,
 				8F89E84C219E926C009B3281 /* UIImage+AddFunction.m in Sources */,
+				8F80A41721AC05F400FA720C /* XTThreadSafeObject.m in Sources */,
 				8F89E830219E926C009B3281 /* NSString+MD5.m in Sources */,
 				8F89E85F219E926C009B3281 /* XTFileManager.m in Sources */,
 				8F89E848219E926C009B3281 /* RootTableCell.m in Sources */,
@@ -682,6 +701,7 @@
 				8F89E838219E926C009B3281 /* MyTextView.m in Sources */,
 				8F89E853219E926C009B3281 /* XTVerification.m in Sources */,
 				8F89E857219E926C009B3281 /* NSObject+XTRuntime.m in Sources */,
+				8F80A41A21AC070A00FA720C /* XTMutableArray.m in Sources */,
 				8F89E85A219E926C009B3281 /* XTJson.m in Sources */,
 				8F89E850219E926C009B3281 /* NSNumber+Round.m in Sources */,
 				8F89E83D219E926C009B3281 /* MyTextField.m in Sources */,
