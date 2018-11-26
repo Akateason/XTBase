@@ -39,8 +39,8 @@
     NSMethodSignature *sig = [anInvocation valueForKey:@"_signature"];
     
     const char *returnType = sig.methodReturnType;
-    //NSLog(@"%@ = > %@",anInvocation.target, NSStringFromSelector(anInvocation.selector));
-    //NSLog(@"%s",returnType);
+//    NSLog(@"%@ = > %@",anInvocation.target, NSStringFromSelector(anInvocation.selector));
+//    NSLog(@"%s",returnType);
     
     if (!strcmp(returnType, "v"))
     {

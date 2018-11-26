@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "XTBase/Utils/Foundation/XTThreadSafeList/XTMutableArray.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    XTMutableArray *ary = [[XTMutableArray alloc] init];
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    queue.maxConcurrentOperationCount = 10;
+    
+    for (int i = 0; i < 2000; i++)
+    {
+        NSNumber *number = [NSNumber numberWithInt:i];
+        [queue addOperationWithBlock:^{
+            [ary addObject:number];
+        }];
+    }
+    [queue waitUntilAllOperationsAreFinished];
+    
+    NSLog(@"%ld",(long)ary.count);
+    NSLog(@"%@",ary);
+
+    
+    
     return YES;
 }
 
