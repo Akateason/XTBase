@@ -11,8 +11,7 @@
 @implementation XTMutableArray
 - (id)init {
     self = [super init];
-    if (self)
-    {
+    if (self) {
         self.mtsContainer = [NSMutableArray array];
     }
     return self;

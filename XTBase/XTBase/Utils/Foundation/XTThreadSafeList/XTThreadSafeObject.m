@@ -35,8 +35,7 @@
     return [[_mtsContainer class] instanceMethodSignatureForSelector:aSelector];
 }
 
-- (void)forwardInvocation:(NSInvocation *)anInvocation
-{
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
     NSMethodSignature *sig = [anInvocation valueForKey:@"_signature"];
     
     const char *returnType = sig.methodReturnType;
