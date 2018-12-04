@@ -21,6 +21,7 @@
                controllerIdentifier:(NSString *)identifier;
 
 + (instancetype)getCtrllerFromNIB;
++ (instancetype)getCtrllerFromNIBWithBundle:(NSBundle *)bundle;
 
 + (UIViewController *)xt_topViewController;
 

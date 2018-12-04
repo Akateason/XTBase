@@ -32,8 +32,12 @@
 }
 
 + (instancetype)getCtrllerFromNIB {
+    return [self getCtrllerFromNIBWithBundle:nil];
+}
+
++ (instancetype)getCtrllerFromNIBWithBundle:(NSBundle *)bundle {
     NSString *clsName         = NSStringFromClass(self.class);
-    UIViewController *ctrller = [[[self class] alloc] initWithNibName:clsName bundle:nil];
+    UIViewController *ctrller = [[[self class] alloc] initWithNibName:clsName bundle:bundle];
     return ctrller;
 }
 
