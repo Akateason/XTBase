@@ -30,7 +30,7 @@
 //#import "MySearchBar.h"
 //#import "MyTabbar.h"
 //#import "MyTabbarCtrller.h"
-//#import "MyTextField.h"
+//#import "XTTextField.h"
 //#import "MyTextView.h"
 //#import "MyWebController.h"
 //#import "RootCtrl.h"
