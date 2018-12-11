@@ -25,6 +25,9 @@
 #import "RootRefreshFooter.h"
 #import "RootCollectionCell.h"
 #import "RootCollectionView.h"
+#import "UICollectionView+XT.h"
+#import "UICollectionViewCell+XT.h"
+
 #import "RootCustomView.h"
 //#import "MyNavCtrller.h"
 //#import "MySearchBar.h"
