@@ -9,6 +9,8 @@
 #ifndef DeviceSysHeader_h
 #define DeviceSysHeader_h
 
+#import "UIView+XTAddition.h"
+
 /*
  * is iphone
  * ios 11
@@ -18,7 +20,27 @@
 
 #define XT_IS_IOS_11 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.f)
 
-#define XT_IS_IPHONE_X (XT_IS_IOS_11 && XT_IS_IPHONE && (MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) == 375 && MAX([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) == 812))
+//#define XT_IS_IPHONE_X (XT_IS_IOS_11 && XT_IS_IPHONE && (MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) == 375 && MAX([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) == 812))
+
+#define XT_IS_IPHONE_X  xt_isIPhoneXSeries()
+
+static inline BOOL xt_isIPhoneXSeries() {
+    BOOL iPhoneXSeries = NO;
+    if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
+        return iPhoneXSeries;
+    }
+    
+    if (@available(iOS 11.0, *)) {
+        UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
+        if (mainWindow.safeAreaInsets.bottom > 0.0) {
+            iPhoneXSeries = YES;
+        }
+    }
+    
+    return iPhoneXSeries;
+}
+
+
 
 /*
  * >= VERSION ?

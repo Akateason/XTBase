@@ -18,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSLog(@"ipx serious %d",XT_IS_IPHONE_X) ;
+    
 }
 
 
