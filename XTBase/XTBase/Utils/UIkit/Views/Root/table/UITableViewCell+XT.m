@@ -22,24 +22,6 @@
 ASSOCIATED(xt_model, setXt_model, id, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 ASSOCIATED(xt_indexPath, setXt_indexPath, NSIndexPath *, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
-+ (void)load {
-    [self xt_swizzleMethod:@selector(initWithStyle:reuseIdentifier:) withMethod:@selector(xt_initWithStyle:reuseIdentifier:)];
-    [self xt_swizzleMethod:@selector(awakeFromNib) withMethod:@selector(xt_awakeFromNib)];
-}
-
-- (instancetype)xt_initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-    [self xt_initWithStyle:style reuseIdentifier:reuseIdentifier];
-
-    [self xt_prepareUI];
-    return self;
-}
-
-- (void)xt_awakeFromNib {
-    [self xt_awakeFromNib];
-
-    [self xt_prepareUI];
-}
-
 #pragma mark--
 #pragma mark - util
 
@@ -83,13 +65,6 @@ ASSOCIATED(xt_indexPath, setXt_indexPath, NSIndexPath *, OBJC_ASSOCIATION_RETAIN
         }
         return cell;
     }
-}
-
-#pragma mark--
-#pragma mark - prepare UI
-
-- (void)xt_prepareUI {
-    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 #pragma mark--

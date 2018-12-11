@@ -11,6 +11,8 @@
 
 @class RootCollectionView;
 
+__attribute__((deprecated("Class RootCollectionView is deprecated , use UICollectionView+XT instead!!!")))
+
 @protocol RootCollectionViewDelegate <NSObject>
 @required
 - (void)collectionView:(RootCollectionView *)collection loadNew:(void (^)(void))endRefresh;

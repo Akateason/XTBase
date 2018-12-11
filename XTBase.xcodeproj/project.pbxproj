@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F39341621BF9DAB00D70BE3 /* UICollectionViewCell+XT.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F39341521BF9DAB00D70BE3 /* UICollectionViewCell+XT.m */; };
 		8F5D5D5F21B77EBF003960E4 /* XTTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D5D5E21B77EBF003960E4 /* XTTextField.m */; };
 		8F80A41721AC05F400FA720C /* XTThreadSafeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F80A41621AC05F400FA720C /* XTThreadSafeObject.m */; };
 		8F80A41A21AC070A00FA720C /* XTMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F80A41921AC070A00FA720C /* XTMutableArray.m */; };
@@ -58,6 +59,7 @@
 		8F89E85E219E926C009B3281 /* XTArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E826219E926C009B3281 /* XTArchive.m */; };
 		8F89E85F219E926C009B3281 /* XTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E827219E926C009B3281 /* XTFileManager.m */; };
 		8F89E860219E926C009B3281 /* XTlibConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E82D219E926C009B3281 /* XTlibConfig.m */; };
+		8F92D19B21BF8AD9000B2EAD /* UICollectionView+XT.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F92D19A21BF8AD9000B2EAD /* UICollectionView+XT.m */; };
 		8FE27315219E78C4009DA0CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE27314219E78C4009DA0CE /* AppDelegate.m */; };
 		8FE27318219E78C4009DA0CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE27317219E78C4009DA0CE /* ViewController.m */; };
 		8FE2731B219E78C4009DA0CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE27319219E78C4009DA0CE /* Main.storyboard */; };
@@ -68,6 +70,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F39341421BF9DAB00D70BE3 /* UICollectionViewCell+XT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+XT.h"; sourceTree = "<group>"; };
+		8F39341521BF9DAB00D70BE3 /* UICollectionViewCell+XT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+XT.m"; sourceTree = "<group>"; };
 		8F5D5D5D21B77EBF003960E4 /* XTTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTTextField.h; sourceTree = "<group>"; };
 		8F5D5D5E21B77EBF003960E4 /* XTTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTTextField.m; sourceTree = "<group>"; };
 		8F80A41521AC05F400FA720C /* XTThreadSafeObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTThreadSafeObject.h; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 		8F89E82E219E926C009B3281 /* XTlibConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTlibConfig.h; sourceTree = "<group>"; };
 		8F89E82F219E926C009B3281 /* FastCodeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastCodeHeader.h; sourceTree = "<group>"; };
 		8F89E861219EA45B009B3281 /* XTBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTBase.h; sourceTree = "<group>"; };
+		8F92D19921BF8AD9000B2EAD /* UICollectionView+XT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+XT.h"; sourceTree = "<group>"; };
+		8F92D19A21BF8AD9000B2EAD /* UICollectionView+XT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+XT.m"; sourceTree = "<group>"; };
 		8FE27310219E78C4009DA0CE /* XTBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE27313219E78C4009DA0CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8FE27314219E78C4009DA0CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -370,6 +376,10 @@
 				8F89E7ED219E926C009B3281 /* RootCollectionCell.m */,
 				8F89E7EC219E926C009B3281 /* RootCollectionView.h */,
 				8F89E7EE219E926C009B3281 /* RootCollectionView.m */,
+				8F92D19921BF8AD9000B2EAD /* UICollectionView+XT.h */,
+				8F92D19A21BF8AD9000B2EAD /* UICollectionView+XT.m */,
+				8F39341421BF9DAB00D70BE3 /* UICollectionViewCell+XT.h */,
+				8F39341521BF9DAB00D70BE3 /* UICollectionViewCell+XT.m */,
 			);
 			path = collection;
 			sourceTree = "<group>";
@@ -689,11 +699,13 @@
 				8F89E858219E926C009B3281 /* NSDictionary+XT.m in Sources */,
 				8F89E83A219E926C009B3281 /* MySearchBar.m in Sources */,
 				8FE27315219E78C4009DA0CE /* AppDelegate.m in Sources */,
+				8F92D19B21BF8AD9000B2EAD /* UICollectionView+XT.m in Sources */,
 				8F89E859219E926C009B3281 /* NSString+Extend.m in Sources */,
 				8F89E852219E926C009B3281 /* NSDate+XTTick.m in Sources */,
 				8F89E85C219E926C009B3281 /* ValetManager.m in Sources */,
 				8F89E84E219E926C009B3281 /* UIResponder+ChainHandler.m in Sources */,
 				8F89E833219E926C009B3281 /* ScreenFit.m in Sources */,
+				8F39341621BF9DAB00D70BE3 /* UICollectionViewCell+XT.m in Sources */,
 				8F89E836219E926C009B3281 /* MyTabbarCtrller.m in Sources */,
 				8F89E84F219E926C009B3281 /* UIView+XTAddition.m in Sources */,
 				8F89E85E219E926C009B3281 /* XTArchive.m in Sources */,

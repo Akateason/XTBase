@@ -30,8 +30,6 @@
 + (instancetype)xt_cellWithTable:(UITableView *)tableView;
 
 #pragma mark - rewrite in sub cls
-// UI and Layout
-- (void)xt_prepareUI;
 
 /**
  * set model rewrite in subclass
