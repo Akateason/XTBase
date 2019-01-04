@@ -26,5 +26,6 @@ Pod::Spec.new do |s|
   s.dependency "YYModel"
   s.dependency "SVProgressHUD"
   s.dependency "UITableView+FDTemplateLayoutCell"
+  s.dependency "UIFontWDCustomLoader"
 
 end
