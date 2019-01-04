@@ -1,8 +1,12 @@
 # XTBase
 
-## Example
+## Doc
+1. Utils
 
-To run the example project, clone the repo, and run directory.
+* Foundation
+* UIkit                  
+* Store
+* Security
 
 ## Requirements
 
@@ -16,16 +20,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "XTBase"
 ```
-
-
-1. Utils
-
-* Foundation
-* UIkit                  
-* Store
-* Security
-
-
 ## Useage
 
 ## Author
