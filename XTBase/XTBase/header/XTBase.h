@@ -9,6 +9,11 @@
 #ifndef XTBase_h
 #define XTBase_h
 
+// vendor
+#import <Masonry/Masonry.h>
+#import <YYModel/YYModel.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 // header
 #import "ScreenHeader.h"

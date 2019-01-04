@@ -7,13 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import "XTBase.h"
-#import <Masonry/Masonry.h>
-#import <YYModel/YYModel.h>
-#import <SVProgressHUD/SVProgressHUD.h>
-#import <ReactiveObjC/ReactiveObjC.h>
-
 
 @interface RootCtrl : UIViewController
 
