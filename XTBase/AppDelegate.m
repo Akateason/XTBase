@@ -20,7 +20,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
     XTMutableArray *ary = [[XTMutableArray alloc] init];
     
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
