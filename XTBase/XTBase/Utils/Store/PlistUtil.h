@@ -12,7 +12,11 @@
 @interface PlistUtil : NSObject
 
 + (NSDictionary *)dictionaryWithPlist:(NSString *)plistName;
++ (NSDictionary *)dictionaryWithPlist:(NSString *)plistName
+                               bundle:(NSBundle *)bundle ;
 
 + (NSArray *)arrayWithPlist:(NSString *)plistName;
++ (NSArray *)arrayWithPlist:(NSString *)plistName
+                     bundle:(NSBundle *)bundle ;
 
 @end

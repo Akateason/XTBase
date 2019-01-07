@@ -12,14 +12,22 @@
 @implementation PlistUtil
 
 + (NSDictionary *)dictionaryWithPlist:(NSString *)plistName {
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:plistName
-                                                          ofType:@"plist"];
+    return [self dictionaryWithPlist:plistName bundle:[NSBundle mainBundle]] ;
+}
+
++ (NSDictionary *)dictionaryWithPlist:(NSString *)plistName
+                               bundle:(NSBundle *)bundle {
+    NSString *plistPath = [bundle pathForResource:plistName ofType:@"plist"];
     return [[NSDictionary alloc] initWithContentsOfFile:plistPath];
 }
 
 + (NSArray *)arrayWithPlist:(NSString *)plistName {
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:plistName
-                                                          ofType:@"plist"];
+    return [self arrayWithPlist:plistName bundle:[NSBundle mainBundle]] ;
+}
+
++ (NSArray *)arrayWithPlist:(NSString *)plistName
+                     bundle:(NSBundle *)bundle {
+    NSString *plistPath = [bundle pathForResource:plistName ofType:@"plist"];
     return [[NSArray alloc] initWithContentsOfFile:plistPath];
 }
 
