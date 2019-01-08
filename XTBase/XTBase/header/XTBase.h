@@ -14,6 +14,7 @@
 #import <YYModel/YYModel.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 #import <ReactiveObjC/ReactiveObjC.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 // header
 #import "ScreenHeader.h"
