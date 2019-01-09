@@ -29,12 +29,6 @@
 #define G_ONE_PIXEL 0.5f
 #define G_CORNER_RADIUS 6.0f
 
-// color
-#define UIColorRGBA(r, g, b, a) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:(a)]
-#define UIColorRGB(r, g, b) UIColorRGBA(r, g, b, 1.0)
-#define UIColorHex(X) [UIColor colorWithHexString:X]
-#define UIColorHexA(X, a) [UIColor colorWithHexString:X alpha:a]
-
 // font
 #define Font(F) [UIFont systemFontOfSize:(F)]
 #define boldFont(F) [UIFont boldSystemFontOfSize:(F)]
