@@ -22,7 +22,7 @@
 
 - (void)prepareUI {
     // prepare UI
-    self.view.backgroundColor = [UIColor whiteColor];
+    
 }
 
 #pragma mark--
