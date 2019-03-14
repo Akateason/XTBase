@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   
   s.name         = "XTBase"
-  s.version      = "0.1.9"
+  s.version      = "0.2.0"
   s.summary      = "base of XTBase"
   s.description  = "iOS rapid utils from XTlib."                   
   s.homepage     = "https://github.com/Akateason/XTBase"
