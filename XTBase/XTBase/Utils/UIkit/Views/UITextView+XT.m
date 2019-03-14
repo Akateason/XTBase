@@ -14,9 +14,16 @@
     UITextPosition *beginning = self.beginningOfDocument;
     UITextPosition *start = [self positionFromPosition:beginning offset:range.location];
     UITextPosition *end = [self positionFromPosition:start offset:range.length];
-    UITextRange *textRange = [self textRangeFromPosition:start toPosition:end];
-    CGRect rect = [self firstRectForRange:textRange];
-    return [self convertRect:rect fromView:self.textInputView];
+    UITextRange *selectionRange = [self textRangeFromPosition:start toPosition:end];
+    
+    NSArray *selectionRects     = [self selectionRectsForRange:selectionRange];
+    CGRect completeRect         = CGRectNull;
+    
+    for (UITextSelectionRect *selectionRect in selectionRects) {
+        completeRect = (CGRectIsNull(completeRect)) ? selectionRect.rect : CGRectUnion(completeRect, selectionRect.rect);
+    }
+    
+    return completeRect;
 }
 
 @end
