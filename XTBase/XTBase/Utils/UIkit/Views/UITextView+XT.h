@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UITextView (XT)
 
 - (CGRect)xt_frameOfTextRange:(NSRange)range ;
+- (void)xt_enumarateThroughParagraphsInRange:(NSRange)range
+                                   withBlock:(void (^)(NSRange paragraphRange))block ;
+
 
 @end
 
