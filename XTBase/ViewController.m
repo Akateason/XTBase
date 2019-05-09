@@ -33,9 +33,15 @@
     
     [[bt rac_signalForControlEvents:(UIControlEventTouchUpInside)] subscribeNext:^(__kindof UIControl * _Nullable x) {
         
-        [UIAlertController xt_showAlertCntrollerWithAlertControllerStyle:(UIAlertControllerStyleActionSheet) title:nil message:nil cancelButtonTitle:@"cancel" destructiveButtonTitle:nil otherButtonTitles:@[@"1",@"2"] fromWithView:bt CallBackBlock:^(NSInteger btnIndex) {
-            
+//        [UIAlertController xt_showAlertCntrollerWithAlertControllerStyle:(UIAlertControllerStyleActionSheet) title:nil message:nil cancelButtonTitle:@"cancel" destructiveButtonTitle:nil otherButtonTitles:@[@"1",@"2"] fromWithView:bt CallBackBlock:^(NSInteger btnIndex) {
+//
+//        }] ;
+
+        [SVProgressHUD show] ;
+        [CommonFunc saveImageToLibrary:[UIImage imageNamed:@"test"] complete:^(bool success) {
+            [SVProgressHUD dismiss] ;
         }] ;
+        
         
     }] ;
     
