@@ -17,7 +17,7 @@ pod 'IQKeyboardManager'
 pod 'UITableView+FDTemplateLayoutCell'
 pod 'RxWebViewController'
 pod 'CYLTableViewPlaceHolder'
-
+pod 'FTPopOverMenu'
 
 #ignore
 pod 'JKCategories'

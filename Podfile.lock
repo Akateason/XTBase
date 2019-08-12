@@ -1,5 +1,6 @@
 PODS:
   - CYLTableViewPlaceHolder (1.0.9)
+  - FTPopOverMenu (2.0.6)
   - IQKeyboardManager (6.2.0)
   - JKCategories (1.8):
     - JKCategories/CoreData (= 1.8)
@@ -160,6 +161,7 @@ PODS:
 
 DEPENDENCIES:
   - CYLTableViewPlaceHolder
+  - FTPopOverMenu
   - IQKeyboardManager
   - JKCategories
   - LxDBAnything
@@ -177,6 +179,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CYLTableViewPlaceHolder
+    - FTPopOverMenu
     - IQKeyboardManager
     - JKCategories
     - LxDBAnything
@@ -193,6 +196,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   CYLTableViewPlaceHolder: 678e070180a24e2f241adc7830d5d7f5e2abbaa5
+  FTPopOverMenu: 39f34d1e1bba859a5b380bbf98239a0a1692c67b
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
   JKCategories: b62b30694ebe6d9fe5520b54ba250015dabd6dae
   LxDBAnything: 154a2ad1ae32e70355d886b5443260543bb60c71
@@ -207,6 +211,6 @@ SPEC CHECKSUMS:
   Valet: 14463ef24fab8fd5809044ecedb61484b799fdd6
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 1f0142a03464336c61a58cf1b87821e6fb0523a8
+PODFILE CHECKSUM: dac0896d4d58470ec47832236eebd1442f32f9b0
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

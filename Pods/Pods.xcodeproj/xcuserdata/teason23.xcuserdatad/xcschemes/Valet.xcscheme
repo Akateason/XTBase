@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7D85446C2B25E1EAD8AFF8ECC9C14E63"
+               BlueprintIdentifier = "8361F1A13EE3FF08E7B0EFF9684A3646"
+               BuildableName = "Valet.framework"
                BlueprintName = "Valet"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Valet.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
