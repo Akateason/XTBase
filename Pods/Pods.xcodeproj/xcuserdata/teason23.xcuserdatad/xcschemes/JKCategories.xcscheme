@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "13A132FAFB226A8B56D8906F6BF901B7"
+               BlueprintIdentifier = "D4389D37A4D49E5FC6B4A7FC985FFFE1"
                BuildableName = "JKCategories.framework"
                BlueprintName = "JKCategories"
                ReferencedContainer = "container:Pods.xcodeproj">

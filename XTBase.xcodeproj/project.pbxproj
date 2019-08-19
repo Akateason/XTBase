@@ -64,6 +64,8 @@
 		8F89E85F219E926C009B3281 /* XTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E827219E926C009B3281 /* XTFileManager.m */; };
 		8F89E860219E926C009B3281 /* XTlibConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E82D219E926C009B3281 /* XTlibConfig.m */; };
 		8F92D19B21BF8AD9000B2EAD /* UICollectionView+XT.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F92D19A21BF8AD9000B2EAD /* UICollectionView+XT.m */; };
+		8FDA73512306AB6400EEDC57 /* UITableView+XTPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA73502306AB6400EEDC57 /* UITableView+XTPlaceHolder.m */; };
+		8FDA73552306AEC100EEDC57 /* DesignableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA73542306AEC100EEDC57 /* DesignableVC.m */; };
 		8FE27315219E78C4009DA0CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE27314219E78C4009DA0CE /* AppDelegate.m */; };
 		8FE27318219E78C4009DA0CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE27317219E78C4009DA0CE /* ViewController.m */; };
 		8FE2731B219E78C4009DA0CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE27319219E78C4009DA0CE /* Main.storyboard */; };
@@ -77,7 +79,7 @@
 		8F296FA421DF4567002778DF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8F39341421BF9DAB00D70BE3 /* UICollectionViewCell+XT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+XT.h"; sourceTree = "<group>"; };
 		8F39341521BF9DAB00D70BE3 /* UICollectionViewCell+XT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+XT.m"; sourceTree = "<group>"; };
-		8F39341721BFA53A00D70BE3 /* XTBase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XTBase.podspec; sourceTree = SOURCE_ROOT; };
+		8F39341721BFA53A00D70BE3 /* XTBase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XTBase.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8F5D5D5D21B77EBF003960E4 /* XTTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTTextField.h; sourceTree = "<group>"; };
 		8F5D5D5E21B77EBF003960E4 /* XTTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTTextField.m; sourceTree = "<group>"; };
 		8F679E2F223A5A9F008DE1BC /* UITextView+XT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+XT.h"; sourceTree = "<group>"; };
@@ -191,6 +193,10 @@
 		8F89E861219EA45B009B3281 /* XTBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTBase.h; sourceTree = "<group>"; };
 		8F92D19921BF8AD9000B2EAD /* UICollectionView+XT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+XT.h"; sourceTree = "<group>"; };
 		8F92D19A21BF8AD9000B2EAD /* UICollectionView+XT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+XT.m"; sourceTree = "<group>"; };
+		8FDA734F2306AB6400EEDC57 /* UITableView+XTPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+XTPlaceHolder.h"; sourceTree = "<group>"; };
+		8FDA73502306AB6400EEDC57 /* UITableView+XTPlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XTPlaceHolder.m"; sourceTree = "<group>"; };
+		8FDA73532306AEC100EEDC57 /* DesignableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignableVC.h; sourceTree = "<group>"; };
+		8FDA73542306AEC100EEDC57 /* DesignableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignableVC.m; sourceTree = "<group>"; };
 		8FE27310219E78C4009DA0CE /* XTBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE27313219E78C4009DA0CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8FE27314219E78C4009DA0CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -411,6 +417,8 @@
 				8F89E7FB219E926C009B3281 /* RootRefreshHeader.m */,
 				8F89E7F6219E926C009B3281 /* RootRefreshFooter.h */,
 				8F89E7FA219E926C009B3281 /* RootRefreshFooter.m */,
+				8FDA734F2306AB6400EEDC57 /* UITableView+XTPlaceHolder.h */,
+				8FDA73502306AB6400EEDC57 /* UITableView+XTPlaceHolder.m */,
 			);
 			path = table;
 			sourceTree = "<group>";
@@ -501,6 +509,17 @@
 			path = header;
 			sourceTree = "<group>";
 		};
+		8FDA73522306AE9B00EEDC57 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				8FE27316219E78C4009DA0CE /* ViewController.h */,
+				8FE27317219E78C4009DA0CE /* ViewController.m */,
+				8FDA73532306AEC100EEDC57 /* DesignableVC.h */,
+				8FDA73542306AEC100EEDC57 /* DesignableVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		8FE27307219E78C4009DA0CE = {
 			isa = PBXGroup;
 			children = (
@@ -526,10 +545,9 @@
 				8F39341721BFA53A00D70BE3 /* XTBase.podspec */,
 				8FE27313219E78C4009DA0CE /* AppDelegate.h */,
 				8FE27314219E78C4009DA0CE /* AppDelegate.m */,
-				8F89E7B8219E926C009B3281 /* XTBase */,
-				8FE27316219E78C4009DA0CE /* ViewController.h */,
-				8FE27317219E78C4009DA0CE /* ViewController.m */,
 				8FE27319219E78C4009DA0CE /* Main.storyboard */,
+				8FDA73522306AE9B00EEDC57 /* VC */,
+				8F89E7B8219E926C009B3281 /* XTBase */,
 				8FE2731C219E78C6009DA0CE /* Assets.xcassets */,
 				8FE2731E219E78C6009DA0CE /* LaunchScreen.storyboard */,
 				8FE27321219E78C6009DA0CE /* Info.plist */,
@@ -614,42 +632,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XTBase/Pods-XTBase-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CYLTableViewPlaceHolder/CYLTableViewPlaceHolder.framework",
-				"${BUILT_PRODUCTS_DIR}/FTPopOverMenu/FTPopOverMenu.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
-				"${BUILT_PRODUCTS_DIR}/JKCategories/JKCategories.framework",
-				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
-				"${BUILT_PRODUCTS_DIR}/RxWebViewController/RxWebViewController.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/UITableView+FDTemplateLayoutCell/UITableView_FDTemplateLayoutCell.framework",
-				"${BUILT_PRODUCTS_DIR}/Valet/Valet.framework",
-				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-XTBase/Pods-XTBase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CYLTableViewPlaceHolder.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FTPopOverMenu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JKCategories.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxWebViewController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UITableView_FDTemplateLayoutCell.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Valet.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-XTBase/Pods-XTBase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -717,11 +704,13 @@
 				8F89E844219E926C009B3281 /* RootCollectionCell.m in Sources */,
 				8F89E84B219E926C009B3281 /* RootRefreshHeader.m in Sources */,
 				8F89E845219E926C009B3281 /* RootCollectionView.m in Sources */,
+				8FDA73552306AEC100EEDC57 /* DesignableVC.m in Sources */,
 				8F89E85B219E926C009B3281 /* CommonFunc.m in Sources */,
 				8F89E858219E926C009B3281 /* NSDictionary+XT.m in Sources */,
 				8F89E83A219E926C009B3281 /* MySearchBar.m in Sources */,
 				8FE27315219E78C4009DA0CE /* AppDelegate.m in Sources */,
 				8F92D19B21BF8AD9000B2EAD /* UICollectionView+XT.m in Sources */,
+				8FDA73512306AB6400EEDC57 /* UITableView+XTPlaceHolder.m in Sources */,
 				8F89E859219E926C009B3281 /* NSString+Extend.m in Sources */,
 				8F89E852219E926C009B3281 /* NSDate+XTTick.m in Sources */,
 				8F89E85C219E926C009B3281 /* ValetManager.m in Sources */,

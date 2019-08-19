@@ -16,12 +16,10 @@ pod 'Valet','2.4.2'
 pod 'IQKeyboardManager'
 pod 'UITableView+FDTemplateLayoutCell'
 pod 'RxWebViewController'
-pod 'CYLTableViewPlaceHolder'
 pod 'FTPopOverMenu'
-
-#ignore
 pod 'JKCategories'
 pod 'LxDBAnything'
+
 # pod 'iCarousel'
 # pod 'BlocksKit'
 # pod 'Bugly'

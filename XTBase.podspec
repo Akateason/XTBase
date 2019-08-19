@@ -21,7 +21,6 @@ Pod::Spec.new do |s|
   s.dependency "MJRefresh"
   s.dependency "Valet", "2.4.2"
   s.dependency "RxWebViewController"
-  s.dependency "CYLTableViewPlaceHolder"
   
   s.dependency "YYModel"
   s.dependency "SVProgressHUD"
