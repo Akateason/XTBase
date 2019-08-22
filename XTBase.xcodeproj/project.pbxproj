@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -72,6 +72,8 @@
 		8FE2731D219E78C6009DA0CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE2731C219E78C6009DA0CE /* Assets.xcassets */; };
 		8FE27320219E78C6009DA0CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE2731E219E78C6009DA0CE /* LaunchScreen.storyboard */; };
 		8FE27323219E78C6009DA0CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE27322219E78C6009DA0CE /* main.m */; };
+		8FF32AB5230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF32AB4230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.m */; };
+		8FF32AB8230E9D7900C1C835 /* PlaceHolderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF32AB7230E9D7900C1C835 /* PlaceHolderVC.m */; };
 		FDEA13C7DF14B22EA5D1B497 /* Pods_XTBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C900BA4C98787315E4667519 /* Pods_XTBase.framework */; };
 /* End PBXBuildFile section */
 
@@ -207,6 +209,10 @@
 		8FE2731F219E78C6009DA0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FE27321219E78C6009DA0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FE27322219E78C6009DA0CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8FF32AB3230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+XTPlaceHolder.h"; sourceTree = "<group>"; };
+		8FF32AB4230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+XTPlaceHolder.m"; sourceTree = "<group>"; };
+		8FF32AB6230E9D7900C1C835 /* PlaceHolderVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceHolderVC.h; sourceTree = "<group>"; };
+		8FF32AB7230E9D7900C1C835 /* PlaceHolderVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceHolderVC.m; sourceTree = "<group>"; };
 		C900BA4C98787315E4667519 /* Pods_XTBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D847D292B8C0D5138D650279 /* Pods-XTBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XTBase/Pods-XTBase.debug.xcconfig"; sourceTree = "<group>"; };
 		FB30FE23562936057118B3A1 /* Pods-XTBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-XTBase/Pods-XTBase.release.xcconfig"; sourceTree = "<group>"; };
@@ -419,6 +425,8 @@
 				8F89E7FA219E926C009B3281 /* RootRefreshFooter.m */,
 				8FDA734F2306AB6400EEDC57 /* UITableView+XTPlaceHolder.h */,
 				8FDA73502306AB6400EEDC57 /* UITableView+XTPlaceHolder.m */,
+				8FF32AB3230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.h */,
+				8FF32AB4230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.m */,
 			);
 			path = table;
 			sourceTree = "<group>";
@@ -516,6 +524,8 @@
 				8FE27317219E78C4009DA0CE /* ViewController.m */,
 				8FDA73532306AEC100EEDC57 /* DesignableVC.h */,
 				8FDA73542306AEC100EEDC57 /* DesignableVC.m */,
+				8FF32AB6230E9D7900C1C835 /* PlaceHolderVC.h */,
+				8FF32AB7230E9D7900C1C835 /* PlaceHolderVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -728,6 +738,8 @@
 				8F80A41A21AC070A00FA720C /* XTMutableArray.m in Sources */,
 				8F89E85A219E926C009B3281 /* XTJson.m in Sources */,
 				8F89E850219E926C009B3281 /* NSNumber+Round.m in Sources */,
+				8FF32AB8230E9D7900C1C835 /* PlaceHolderVC.m in Sources */,
+				8FF32AB5230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.m in Sources */,
 				8F89E856219E926C009B3281 /* NSObject+Reflection.m in Sources */,
 				8F89E832219E926C009B3281 /* UIFont+FontAdapter.m in Sources */,
 				8F89E837219E926C009B3281 /* UIViewController+XTAddition.m in Sources */,
