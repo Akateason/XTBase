@@ -15,7 +15,7 @@ pod 'SSZipArchive'
 pod 'Valet','2.4.2'
 pod 'IQKeyboardManager'
 pod 'UITableView+FDTemplateLayoutCell'
-pod 'RxWebViewController'
+#pod 'RxWebViewController'   #在ios13，编译mac运行不通过。
 pod 'FTPopOverMenu'
 pod 'JKCategories'
 pod 'LxDBAnything'
