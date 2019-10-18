@@ -70,6 +70,9 @@
 #import "NSDictionary+XT.h"
 #import "UITextView+XT.h"
 #import "NSAttributedString+XT.h"
+#import "UIImage+XT.h"
+
+
 
 // Util
 #import "NSString+MD5.h"

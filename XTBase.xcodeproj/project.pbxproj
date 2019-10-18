@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F221F792358671700CEB935 /* UIImage+XT.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F221F782358671700CEB935 /* UIImage+XT.m */; };
+		8F221F7C2358702E00CEB935 /* ImageDoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F221F7B2358702E00CEB935 /* ImageDoVC.m */; };
 		8F296FA521DF4567002778DF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8F296FA421DF4567002778DF /* README.md */; };
 		8F39341621BF9DAB00D70BE3 /* UICollectionViewCell+XT.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F39341521BF9DAB00D70BE3 /* UICollectionViewCell+XT.m */; };
 		8F39341821BFA53B00D70BE3 /* XTBase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8F39341721BFA53A00D70BE3 /* XTBase.podspec */; };
@@ -78,6 +80,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F221F772358671700CEB935 /* UIImage+XT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+XT.h"; sourceTree = "<group>"; };
+		8F221F782358671700CEB935 /* UIImage+XT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XT.m"; sourceTree = "<group>"; };
+		8F221F7A2358702E00CEB935 /* ImageDoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageDoVC.h; sourceTree = "<group>"; };
+		8F221F7B2358702E00CEB935 /* ImageDoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageDoVC.m; sourceTree = "<group>"; };
 		8F296FA421DF4567002778DF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8F39341421BF9DAB00D70BE3 /* UICollectionViewCell+XT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+XT.h"; sourceTree = "<group>"; };
 		8F39341521BF9DAB00D70BE3 /* UICollectionViewCell+XT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+XT.m"; sourceTree = "<group>"; };
@@ -366,6 +372,8 @@
 				8F89E7DE219E926C009B3281 /* UIButton+XT.m */,
 				8F89E7FE219E926C009B3281 /* UIView+Sizes.h */,
 				8F89E7DF219E926C009B3281 /* UIView+Sizes.m */,
+				8F221F772358671700CEB935 /* UIImage+XT.h */,
+				8F221F782358671700CEB935 /* UIImage+XT.m */,
 				8F89E7E0219E926C009B3281 /* UIImage+AddFunction.h */,
 				8F89E7FD219E926C009B3281 /* UIImage+AddFunction.m */,
 				8F89E801219E926C009B3281 /* UIImageView+QNExtention.h */,
@@ -526,6 +534,8 @@
 				8FDA73542306AEC100EEDC57 /* DesignableVC.m */,
 				8FF32AB6230E9D7900C1C835 /* PlaceHolderVC.h */,
 				8FF32AB7230E9D7900C1C835 /* PlaceHolderVC.m */,
+				8F221F7A2358702E00CEB935 /* ImageDoVC.h */,
+				8F221F7B2358702E00CEB935 /* ImageDoVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -696,12 +706,14 @@
 				8F679E34223A7DF8008DE1BC /* NSAttributedString+XT.m in Sources */,
 				8F89E846219E926C009B3281 /* UITableViewCell+XT.m in Sources */,
 				8F89E840219E926C009B3281 /* UIView+Sizes.m in Sources */,
+				8F221F792358671700CEB935 /* UIImage+XT.m in Sources */,
 				8FE27323219E78C6009DA0CE /* main.m in Sources */,
 				8F89E847219E926C009B3281 /* RootTableView.m in Sources */,
 				8F89E84C219E926C009B3281 /* UIImage+AddFunction.m in Sources */,
 				8F80A41721AC05F400FA720C /* XTThreadSafeObject.m in Sources */,
 				8F89E830219E926C009B3281 /* NSString+MD5.m in Sources */,
 				8F89E85F219E926C009B3281 /* XTFileManager.m in Sources */,
+				8F221F7C2358702E00CEB935 /* ImageDoVC.m in Sources */,
 				8F89E848219E926C009B3281 /* RootTableCell.m in Sources */,
 				8F89E83B219E926C009B3281 /* UIAlertController+XTAddition.m in Sources */,
 				8F89E835219E926C009B3281 /* RootCtrl.m in Sources */,
