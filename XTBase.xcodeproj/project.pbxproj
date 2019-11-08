@@ -10,7 +10,6 @@
 		8F221F792358671700CEB935 /* UIImage+XT.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F221F782358671700CEB935 /* UIImage+XT.m */; };
 		8F221F7C2358702E00CEB935 /* ImageDoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F221F7B2358702E00CEB935 /* ImageDoVC.m */; };
 		8F296FA521DF4567002778DF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8F296FA421DF4567002778DF /* README.md */; };
-		8F39341621BF9DAB00D70BE3 /* UICollectionViewCell+XT.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F39341521BF9DAB00D70BE3 /* UICollectionViewCell+XT.m */; };
 		8F39341821BFA53B00D70BE3 /* XTBase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8F39341721BFA53A00D70BE3 /* XTBase.podspec */; };
 		8F5D5D5F21B77EBF003960E4 /* XTTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D5D5E21B77EBF003960E4 /* XTTextField.m */; };
 		8F679E31223A5A9F008DE1BC /* UITextView+XT.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F679E30223A5A9F008DE1BC /* UITextView+XT.m */; };
@@ -36,14 +35,6 @@
 		8F89E841219E926C009B3281 /* UIImageView+QNExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E7E1219E926C009B3281 /* UIImageView+QNExtention.m */; };
 		8F89E842219E926C009B3281 /* UILabel+Calculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E7E4219E926C009B3281 /* UILabel+Calculate.m */; };
 		8F89E843219E926C009B3281 /* RootCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E7E9219E926C009B3281 /* RootCustomView.m */; };
-		8F89E844219E926C009B3281 /* RootCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E7ED219E926C009B3281 /* RootCollectionCell.m */; };
-		8F89E845219E926C009B3281 /* RootCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E7EE219E926C009B3281 /* RootCollectionView.m */; };
-		8F89E846219E926C009B3281 /* UITableViewCell+XT.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E7F2219E926C009B3281 /* UITableViewCell+XT.m */; };
-		8F89E847219E926C009B3281 /* RootTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E7F3219E926C009B3281 /* RootTableView.m */; };
-		8F89E848219E926C009B3281 /* RootTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E7F4219E926C009B3281 /* RootTableCell.m */; };
-		8F89E849219E926C009B3281 /* UITableView+XTReloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E7F9219E926C009B3281 /* UITableView+XTReloader.m */; };
-		8F89E84A219E926C009B3281 /* RootRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E7FA219E926C009B3281 /* RootRefreshFooter.m */; };
-		8F89E84B219E926C009B3281 /* RootRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E7FB219E926C009B3281 /* RootRefreshHeader.m */; };
 		8F89E84C219E926C009B3281 /* UIImage+AddFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E7FD219E926C009B3281 /* UIImage+AddFunction.m */; };
 		8F89E84D219E926C009B3281 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E7FF219E926C009B3281 /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 		8F89E84E219E926C009B3281 /* UIResponder+ChainHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E800219E926C009B3281 /* UIResponder+ChainHandler.m */; };
@@ -65,8 +56,6 @@
 		8F89E85E219E926C009B3281 /* XTArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E826219E926C009B3281 /* XTArchive.m */; };
 		8F89E85F219E926C009B3281 /* XTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E827219E926C009B3281 /* XTFileManager.m */; };
 		8F89E860219E926C009B3281 /* XTlibConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E82D219E926C009B3281 /* XTlibConfig.m */; };
-		8F92D19B21BF8AD9000B2EAD /* UICollectionView+XT.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F92D19A21BF8AD9000B2EAD /* UICollectionView+XT.m */; };
-		8FDA73512306AB6400EEDC57 /* UITableView+XTPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA73502306AB6400EEDC57 /* UITableView+XTPlaceHolder.m */; };
 		8FDA73552306AEC100EEDC57 /* DesignableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA73542306AEC100EEDC57 /* DesignableVC.m */; };
 		8FE27315219E78C4009DA0CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE27314219E78C4009DA0CE /* AppDelegate.m */; };
 		8FE27318219E78C4009DA0CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE27317219E78C4009DA0CE /* ViewController.m */; };
@@ -74,7 +63,6 @@
 		8FE2731D219E78C6009DA0CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE2731C219E78C6009DA0CE /* Assets.xcassets */; };
 		8FE27320219E78C6009DA0CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE2731E219E78C6009DA0CE /* LaunchScreen.storyboard */; };
 		8FE27323219E78C6009DA0CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE27322219E78C6009DA0CE /* main.m */; };
-		8FF32AB5230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF32AB4230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.m */; };
 		8FF32AB8230E9D7900C1C835 /* PlaceHolderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF32AB7230E9D7900C1C835 /* PlaceHolderVC.m */; };
 		FDEA13C7DF14B22EA5D1B497 /* Pods_XTBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C900BA4C98787315E4667519 /* Pods_XTBase.framework */; };
 /* End PBXBuildFile section */
@@ -85,8 +73,6 @@
 		8F221F7A2358702E00CEB935 /* ImageDoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageDoVC.h; sourceTree = "<group>"; };
 		8F221F7B2358702E00CEB935 /* ImageDoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageDoVC.m; sourceTree = "<group>"; };
 		8F296FA421DF4567002778DF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		8F39341421BF9DAB00D70BE3 /* UICollectionViewCell+XT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+XT.h"; sourceTree = "<group>"; };
-		8F39341521BF9DAB00D70BE3 /* UICollectionViewCell+XT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+XT.m"; sourceTree = "<group>"; };
 		8F39341721BFA53A00D70BE3 /* XTBase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XTBase.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8F5D5D5D21B77EBF003960E4 /* XTTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTTextField.h; sourceTree = "<group>"; };
 		8F5D5D5E21B77EBF003960E4 /* XTTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTTextField.m; sourceTree = "<group>"; };
@@ -136,23 +122,7 @@
 		8F89E7E6219E926C009B3281 /* UIButton+XT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XT.h"; sourceTree = "<group>"; };
 		8F89E7E7219E926C009B3281 /* UILabel+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Addition.h"; sourceTree = "<group>"; };
 		8F89E7E9219E926C009B3281 /* RootCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootCustomView.m; sourceTree = "<group>"; };
-		8F89E7EB219E926C009B3281 /* RootCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootCollectionCell.h; sourceTree = "<group>"; };
-		8F89E7EC219E926C009B3281 /* RootCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootCollectionView.h; sourceTree = "<group>"; };
-		8F89E7ED219E926C009B3281 /* RootCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootCollectionCell.m; sourceTree = "<group>"; };
-		8F89E7EE219E926C009B3281 /* RootCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootCollectionView.m; sourceTree = "<group>"; };
 		8F89E7EF219E926C009B3281 /* RootCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootCustomView.h; sourceTree = "<group>"; };
-		8F89E7F1219E926C009B3281 /* UITableView+XTReloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+XTReloader.h"; sourceTree = "<group>"; };
-		8F89E7F2219E926C009B3281 /* UITableViewCell+XT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+XT.m"; sourceTree = "<group>"; };
-		8F89E7F3219E926C009B3281 /* RootTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableView.m; sourceTree = "<group>"; };
-		8F89E7F4219E926C009B3281 /* RootTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableCell.m; sourceTree = "<group>"; };
-		8F89E7F5219E926C009B3281 /* RootRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootRefreshHeader.h; sourceTree = "<group>"; };
-		8F89E7F6219E926C009B3281 /* RootRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootRefreshFooter.h; sourceTree = "<group>"; };
-		8F89E7F7219E926C009B3281 /* RootTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableView.h; sourceTree = "<group>"; };
-		8F89E7F8219E926C009B3281 /* UITableViewCell+XT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+XT.h"; sourceTree = "<group>"; };
-		8F89E7F9219E926C009B3281 /* UITableView+XTReloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XTReloader.m"; sourceTree = "<group>"; };
-		8F89E7FA219E926C009B3281 /* RootRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootRefreshFooter.m; sourceTree = "<group>"; };
-		8F89E7FB219E926C009B3281 /* RootRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootRefreshHeader.m; sourceTree = "<group>"; };
-		8F89E7FC219E926C009B3281 /* RootTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableCell.h; sourceTree = "<group>"; };
 		8F89E7FD219E926C009B3281 /* UIImage+AddFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AddFunction.m"; sourceTree = "<group>"; };
 		8F89E7FE219E926C009B3281 /* UIView+Sizes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Sizes.h"; sourceTree = "<group>"; };
 		8F89E7FF219E926C009B3281 /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
@@ -199,10 +169,6 @@
 		8F89E82E219E926C009B3281 /* XTlibConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTlibConfig.h; sourceTree = "<group>"; };
 		8F89E82F219E926C009B3281 /* FastCodeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastCodeHeader.h; sourceTree = "<group>"; };
 		8F89E861219EA45B009B3281 /* XTBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTBase.h; sourceTree = "<group>"; };
-		8F92D19921BF8AD9000B2EAD /* UICollectionView+XT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+XT.h"; sourceTree = "<group>"; };
-		8F92D19A21BF8AD9000B2EAD /* UICollectionView+XT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+XT.m"; sourceTree = "<group>"; };
-		8FDA734F2306AB6400EEDC57 /* UITableView+XTPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+XTPlaceHolder.h"; sourceTree = "<group>"; };
-		8FDA73502306AB6400EEDC57 /* UITableView+XTPlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XTPlaceHolder.m"; sourceTree = "<group>"; };
 		8FDA73532306AEC100EEDC57 /* DesignableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignableVC.h; sourceTree = "<group>"; };
 		8FDA73542306AEC100EEDC57 /* DesignableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignableVC.m; sourceTree = "<group>"; };
 		8FE27310219E78C4009DA0CE /* XTBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,8 +181,6 @@
 		8FE2731F219E78C6009DA0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FE27321219E78C6009DA0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FE27322219E78C6009DA0CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8FF32AB3230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+XTPlaceHolder.h"; sourceTree = "<group>"; };
-		8FF32AB4230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+XTPlaceHolder.m"; sourceTree = "<group>"; };
 		8FF32AB6230E9D7900C1C835 /* PlaceHolderVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceHolderVC.h; sourceTree = "<group>"; };
 		8FF32AB7230E9D7900C1C835 /* PlaceHolderVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceHolderVC.m; sourceTree = "<group>"; };
 		C900BA4C98787315E4667519 /* Pods_XTBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -395,48 +359,8 @@
 			children = (
 				8F89E7EF219E926C009B3281 /* RootCustomView.h */,
 				8F89E7E9219E926C009B3281 /* RootCustomView.m */,
-				8F89E7EA219E926C009B3281 /* collection */,
-				8F89E7F0219E926C009B3281 /* table */,
 			);
 			path = Root;
-			sourceTree = "<group>";
-		};
-		8F89E7EA219E926C009B3281 /* collection */ = {
-			isa = PBXGroup;
-			children = (
-				8FF32AB3230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.h */,
-				8FF32AB4230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.m */,
-				8F89E7EB219E926C009B3281 /* RootCollectionCell.h */,
-				8F89E7ED219E926C009B3281 /* RootCollectionCell.m */,
-				8F89E7EC219E926C009B3281 /* RootCollectionView.h */,
-				8F89E7EE219E926C009B3281 /* RootCollectionView.m */,
-				8F92D19921BF8AD9000B2EAD /* UICollectionView+XT.h */,
-				8F92D19A21BF8AD9000B2EAD /* UICollectionView+XT.m */,
-				8F39341421BF9DAB00D70BE3 /* UICollectionViewCell+XT.h */,
-				8F39341521BF9DAB00D70BE3 /* UICollectionViewCell+XT.m */,
-			);
-			path = collection;
-			sourceTree = "<group>";
-		};
-		8F89E7F0219E926C009B3281 /* table */ = {
-			isa = PBXGroup;
-			children = (
-				8F89E7F1219E926C009B3281 /* UITableView+XTReloader.h */,
-				8F89E7F9219E926C009B3281 /* UITableView+XTReloader.m */,
-				8F89E7F8219E926C009B3281 /* UITableViewCell+XT.h */,
-				8F89E7F2219E926C009B3281 /* UITableViewCell+XT.m */,
-				8F89E7F7219E926C009B3281 /* RootTableView.h */,
-				8F89E7F3219E926C009B3281 /* RootTableView.m */,
-				8F89E7FC219E926C009B3281 /* RootTableCell.h */,
-				8F89E7F4219E926C009B3281 /* RootTableCell.m */,
-				8F89E7F5219E926C009B3281 /* RootRefreshHeader.h */,
-				8F89E7FB219E926C009B3281 /* RootRefreshHeader.m */,
-				8F89E7F6219E926C009B3281 /* RootRefreshFooter.h */,
-				8F89E7FA219E926C009B3281 /* RootRefreshFooter.m */,
-				8FDA734F2306AB6400EEDC57 /* UITableView+XTPlaceHolder.h */,
-				8FDA73502306AB6400EEDC57 /* UITableView+XTPlaceHolder.m */,
-			);
-			path = table;
 			sourceTree = "<group>";
 		};
 		8F89E804219E926C009B3281 /* Foundation */ = {
@@ -696,25 +620,20 @@
 				8F89E83F219E926C009B3281 /* UIButton+XT.m in Sources */,
 				8F5D5D5F21B77EBF003960E4 /* XTTextField.m in Sources */,
 				8F89E84D219E926C009B3281 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
-				8F89E849219E926C009B3281 /* UITableView+XTReloader.m in Sources */,
 				8F89E85D219E926C009B3281 /* PlistUtil.m in Sources */,
 				8FE27318219E78C4009DA0CE /* ViewController.m in Sources */,
 				8F89E831219E926C009B3281 /* Base64.m in Sources */,
 				8F89E854219E926C009B3281 /* NSArray+XT.m in Sources */,
 				8F89E841219E926C009B3281 /* UIImageView+QNExtention.m in Sources */,
-				8F89E84A219E926C009B3281 /* RootRefreshFooter.m in Sources */,
 				8F679E34223A7DF8008DE1BC /* NSAttributedString+XT.m in Sources */,
-				8F89E846219E926C009B3281 /* UITableViewCell+XT.m in Sources */,
 				8F89E840219E926C009B3281 /* UIView+Sizes.m in Sources */,
 				8F221F792358671700CEB935 /* UIImage+XT.m in Sources */,
 				8FE27323219E78C6009DA0CE /* main.m in Sources */,
-				8F89E847219E926C009B3281 /* RootTableView.m in Sources */,
 				8F89E84C219E926C009B3281 /* UIImage+AddFunction.m in Sources */,
 				8F80A41721AC05F400FA720C /* XTThreadSafeObject.m in Sources */,
 				8F89E830219E926C009B3281 /* NSString+MD5.m in Sources */,
 				8F89E85F219E926C009B3281 /* XTFileManager.m in Sources */,
 				8F221F7C2358702E00CEB935 /* ImageDoVC.m in Sources */,
-				8F89E848219E926C009B3281 /* RootTableCell.m in Sources */,
 				8F89E83B219E926C009B3281 /* UIAlertController+XTAddition.m in Sources */,
 				8F89E835219E926C009B3281 /* RootCtrl.m in Sources */,
 				8F89E839219E926C009B3281 /* MyNavCtrller.m in Sources */,
@@ -723,22 +642,16 @@
 				8F89E83E219E926C009B3281 /* UILabel+Addition.m in Sources */,
 				8F679E31223A5A9F008DE1BC /* UITextView+XT.m in Sources */,
 				8F89E834219E926C009B3281 /* MyWebController.m in Sources */,
-				8F89E844219E926C009B3281 /* RootCollectionCell.m in Sources */,
-				8F89E84B219E926C009B3281 /* RootRefreshHeader.m in Sources */,
-				8F89E845219E926C009B3281 /* RootCollectionView.m in Sources */,
 				8FDA73552306AEC100EEDC57 /* DesignableVC.m in Sources */,
 				8F89E85B219E926C009B3281 /* CommonFunc.m in Sources */,
 				8F89E858219E926C009B3281 /* NSDictionary+XT.m in Sources */,
 				8F89E83A219E926C009B3281 /* MySearchBar.m in Sources */,
 				8FE27315219E78C4009DA0CE /* AppDelegate.m in Sources */,
-				8F92D19B21BF8AD9000B2EAD /* UICollectionView+XT.m in Sources */,
-				8FDA73512306AB6400EEDC57 /* UITableView+XTPlaceHolder.m in Sources */,
 				8F89E859219E926C009B3281 /* NSString+Extend.m in Sources */,
 				8F89E852219E926C009B3281 /* NSDate+XTTick.m in Sources */,
 				8F89E85C219E926C009B3281 /* ValetManager.m in Sources */,
 				8F89E84E219E926C009B3281 /* UIResponder+ChainHandler.m in Sources */,
 				8F89E833219E926C009B3281 /* ScreenFit.m in Sources */,
-				8F39341621BF9DAB00D70BE3 /* UICollectionViewCell+XT.m in Sources */,
 				8F89E836219E926C009B3281 /* MyTabbarCtrller.m in Sources */,
 				8F89E84F219E926C009B3281 /* UIView+XTAddition.m in Sources */,
 				8F89E85E219E926C009B3281 /* XTArchive.m in Sources */,
@@ -751,7 +664,6 @@
 				8F89E85A219E926C009B3281 /* XTJson.m in Sources */,
 				8F89E850219E926C009B3281 /* NSNumber+Round.m in Sources */,
 				8FF32AB8230E9D7900C1C835 /* PlaceHolderVC.m in Sources */,
-				8FF32AB5230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.m in Sources */,
 				8F89E856219E926C009B3281 /* NSObject+Reflection.m in Sources */,
 				8F89E832219E926C009B3281 /* UIFont+FontAdapter.m in Sources */,
 				8F89E837219E926C009B3281 /* UIViewController+XTAddition.m in Sources */,
