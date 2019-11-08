@@ -404,6 +404,8 @@
 		8F89E7EA219E926C009B3281 /* collection */ = {
 			isa = PBXGroup;
 			children = (
+				8FF32AB3230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.h */,
+				8FF32AB4230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.m */,
 				8F89E7EB219E926C009B3281 /* RootCollectionCell.h */,
 				8F89E7ED219E926C009B3281 /* RootCollectionCell.m */,
 				8F89E7EC219E926C009B3281 /* RootCollectionView.h */,
@@ -433,8 +435,6 @@
 				8F89E7FA219E926C009B3281 /* RootRefreshFooter.m */,
 				8FDA734F2306AB6400EEDC57 /* UITableView+XTPlaceHolder.h */,
 				8FDA73502306AB6400EEDC57 /* UITableView+XTPlaceHolder.m */,
-				8FF32AB3230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.h */,
-				8FF32AB4230E9CB200C1C835 /* UICollectionView+XTPlaceHolder.m */,
 			);
 			path = table;
 			sourceTree = "<group>";
