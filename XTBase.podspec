@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   
   s.name         = "XTBase"
-  s.version      = "1.2.2"
+  s.version      = "1.3.0"
   s.summary      = "base of XTBase"
   s.description  = "iOS rapid utils from XTlib."                   
   s.homepage     = "https://github.com/Akateason/XTBase"
@@ -20,8 +20,6 @@ Pod::Spec.new do |s|
   s.dependency "SSZipArchive"
   s.dependency "MJRefresh"
   s.dependency "Valet", "2.4.2"
-#  s.dependency "RxWebViewController"
-  
   s.dependency "YYModel"
   s.dependency "SVProgressHUD"
   s.dependency "UITableView+FDTemplateLayoutCell"

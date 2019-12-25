@@ -8,6 +8,8 @@
 
 #import "DesignableVC.h"
 #import "XTBase.h"
+#import <XTTable/XTTable.h>
+#import <XTTable/XTCollection.h>
 
 @interface DesignableVC ()
 @property (copy, nonatomic) NSArray *dataList ;
