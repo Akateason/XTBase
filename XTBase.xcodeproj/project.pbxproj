@@ -55,7 +55,6 @@
 		8F89E85E219E926C009B3281 /* XTArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E826219E926C009B3281 /* XTArchive.m */; };
 		8F89E85F219E926C009B3281 /* XTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E827219E926C009B3281 /* XTFileManager.m */; };
 		8F89E860219E926C009B3281 /* XTlibConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E82D219E926C009B3281 /* XTlibConfig.m */; };
-		8FDA73552306AEC100EEDC57 /* DesignableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA73542306AEC100EEDC57 /* DesignableVC.m */; };
 		8FE27315219E78C4009DA0CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE27314219E78C4009DA0CE /* AppDelegate.m */; };
 		8FE27318219E78C4009DA0CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE27317219E78C4009DA0CE /* ViewController.m */; };
 		8FE2731B219E78C4009DA0CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE27319219E78C4009DA0CE /* Main.storyboard */; };
@@ -165,8 +164,6 @@
 		8F89E82E219E926C009B3281 /* XTlibConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTlibConfig.h; sourceTree = "<group>"; };
 		8F89E82F219E926C009B3281 /* FastCodeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastCodeHeader.h; sourceTree = "<group>"; };
 		8F89E861219EA45B009B3281 /* XTBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTBase.h; sourceTree = "<group>"; };
-		8FDA73532306AEC100EEDC57 /* DesignableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignableVC.h; sourceTree = "<group>"; };
-		8FDA73542306AEC100EEDC57 /* DesignableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignableVC.m; sourceTree = "<group>"; };
 		8FE27310219E78C4009DA0CE /* XTBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE27313219E78C4009DA0CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8FE27314219E78C4009DA0CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -446,8 +443,6 @@
 			children = (
 				8FE27316219E78C4009DA0CE /* ViewController.h */,
 				8FE27317219E78C4009DA0CE /* ViewController.m */,
-				8FDA73532306AEC100EEDC57 /* DesignableVC.h */,
-				8FDA73542306AEC100EEDC57 /* DesignableVC.m */,
 				8F221F7A2358702E00CEB935 /* ImageDoVC.h */,
 				8F221F7B2358702E00CEB935 /* ImageDoVC.m */,
 			);
@@ -631,7 +626,6 @@
 				8F89E83E219E926C009B3281 /* UILabel+Addition.m in Sources */,
 				8F679E31223A5A9F008DE1BC /* UITextView+XT.m in Sources */,
 				8F89E834219E926C009B3281 /* MyWebController.m in Sources */,
-				8FDA73552306AEC100EEDC57 /* DesignableVC.m in Sources */,
 				8F89E85B219E926C009B3281 /* CommonFunc.m in Sources */,
 				8F89E858219E926C009B3281 /* NSDictionary+XT.m in Sources */,
 				8F89E83A219E926C009B3281 /* MySearchBar.m in Sources */,
