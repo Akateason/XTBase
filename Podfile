@@ -4,7 +4,7 @@ use_frameworks!
 
 target 'XTBase' do
 
-pod 'XTTable'
+
 
 pod 'YYModel'
 pod 'ReactiveObjC'
