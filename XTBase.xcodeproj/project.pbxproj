@@ -429,10 +429,10 @@
 			children = (
 				8F89E861219EA45B009B3281 /* XTBase.h */,
 				8F89E82B219E926C009B3281 /* XTlibConst.h */,
+				8F89E82E219E926C009B3281 /* XTlibConfig.h */,
 				8F89E82D219E926C009B3281 /* XTlibConfig.m */,
 				8F89E82A219E926C009B3281 /* ScreenHeader.h */,
 				8F89E82C219E926C009B3281 /* DeviceSysHeader.h */,
-				8F89E82E219E926C009B3281 /* XTlibConfig.h */,
 				8F89E82F219E926C009B3281 /* FastCodeHeader.h */,
 			);
 			path = header;

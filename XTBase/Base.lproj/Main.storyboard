@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CJY-gg-f0E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CJY-gg-f0E">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,9 +20,6 @@
                                 <rect key="frame" x="155.5" y="174" width="103" height="34"/>
                                 <color key="backgroundColor" red="0.99738985300000005" green="0.36561745410000002" blue="0.31027925010000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="ibdesignable"/>
-                                <connections>
-                                    <segue destination="3Hr-56-cw4" kind="show" id="gfu-sr-01h"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SS2-0M-l8F">
                                 <rect key="frame" x="159" y="110" width="96" height="34"/>
@@ -42,7 +39,7 @@
                                 </constraints>
                                 <state key="normal" title="imageDo"/>
                                 <connections>
-                                    <segue destination="p8E-ZT-Hb8" kind="show" id="hGc-G0-fnn"/>
+                                    <segue destination="p8E-ZT-Hb8" kind="push" id="hGc-G0-fnn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,68 +59,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
-        </scene>
-        <!--storyboard desinable-->
-        <scene sceneID="Qc6-7v-HTw">
-            <objects>
-                <viewController title="storyboard desinable" id="3Hr-56-cw4" customClass="DesignableVC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TfQ-zG-R95">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAs-OL-FRx" customClass="RootCustomView">
-                                <rect key="frame" x="87" y="116" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="8bG-Pz-5g8"/>
-                                    <constraint firstAttribute="height" constant="128" id="ieI-wB-lKe"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="xt_completeRound" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="the-OI-Zo6" customClass="RootCustomButton">
-                                <rect key="frame" x="107" y="288" width="200" height="34"/>
-                                <color key="backgroundColor" red="0.99709171060000001" green="0.53786963219999995" blue="0.40042752030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="V1w-DI-qtb"/>
-                                    <constraint firstAttribute="width" constant="200" id="hk2-JF-CUl"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="xt_borderWidth">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="xt_borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mDo-po-oAf">
-                                <rect key="frame" x="0.0" y="393" width="414" height="503"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="CAs-OL-FRx" firstAttribute="top" secondItem="spu-ne-U8L" secondAttribute="top" constant="28" id="2Lb-BU-LZB"/>
-                            <constraint firstItem="CAs-OL-FRx" firstAttribute="centerX" secondItem="TfQ-zG-R95" secondAttribute="centerX" id="C2t-ll-sUp"/>
-                            <constraint firstItem="mDo-po-oAf" firstAttribute="top" secondItem="the-OI-Zo6" secondAttribute="bottom" constant="71" id="Fx2-7r-dvY"/>
-                            <constraint firstItem="mDo-po-oAf" firstAttribute="trailing" secondItem="spu-ne-U8L" secondAttribute="trailing" id="UkL-GI-Ac1"/>
-                            <constraint firstItem="the-OI-Zo6" firstAttribute="top" secondItem="CAs-OL-FRx" secondAttribute="bottom" constant="44" id="WWL-1M-kMT"/>
-                            <constraint firstAttribute="bottom" secondItem="mDo-po-oAf" secondAttribute="bottom" id="acj-H7-iC2"/>
-                            <constraint firstItem="the-OI-Zo6" firstAttribute="centerX" secondItem="TfQ-zG-R95" secondAttribute="centerX" id="lZT-XN-bYg"/>
-                            <constraint firstItem="mDo-po-oAf" firstAttribute="leading" secondItem="spu-ne-U8L" secondAttribute="leading" id="sdI-n4-Moy"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="spu-ne-U8L"/>
-                    </view>
-                    <connections>
-                        <outlet property="table" destination="mDo-po-oAf" id="nWd-Mp-U0a"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aib-Kr-yCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2013.0434782608697" y="138.61607142857142"/>
         </scene>
         <!--图片处理-->
         <scene sceneID="iP8-vt-AYR">
