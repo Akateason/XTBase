@@ -14,6 +14,8 @@
 #import "UIImage+AddFunction.h"
 #import  "sys/utsname.h"
 #import <Photos/Photos.h>
+#import "XTlibConst.h"
+
 
 #define SCORE_STR_LOW @"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%@"
 #define SCORE_STR_HIGH @"itms-apps://itunes.apple.com/app/id%@"
@@ -54,11 +56,11 @@
         [PHAssetCreationRequest creationRequestForAssetFromImage:savedImage].placeholderForCreatedAsset.localIdentifier;
     } completionHandler:^(BOOL success, NSError * _Nullable error) {
         if (error) {
-            NSLog(@"保存图片到相机胶卷中失败");
+            xt_LOG_DEBUG(@"保存图片到相机胶卷中失败");
             if (complete) complete(NO) ;
             return;
         }
-        NSLog(@"成功保存图片到相机胶卷中");
+        xt_LOG_DEBUG(@"成功保存图片到相机胶卷中");
         if (complete) complete(YES) ;
     }];
 }
@@ -67,7 +69,7 @@
 
 + (NSString *)getVersionStrOfMyAPP {
     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-    NSLog(@"version : %@", version);
+    xt_LOG_INFO(@"version : %@", version);
     return version;
 }
 
@@ -103,7 +105,7 @@
 //    NSError *error = nil;
 //    NSData *recervedData = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&error];
 //    NSString *results = [[NSString alloc] initWithBytes:[recervedData bytes] length:[recervedData length] encoding:NSUTF8StringEncoding];
-////    NSLog(@"app : %@",results) ;
+////    xt_LOG_DEBUG(@"app : %@",results) ;
 //
 //    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[results dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil] ;
 //
@@ -141,7 +143,7 @@
 //        }
 //        else
 //        {
-//            NSLog(@"此版本为最新版本") ;
+//            xt_LOG_DEBUG(@"此版本为最新版本") ;
 //        }
 //    }
 //}
