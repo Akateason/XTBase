@@ -12,16 +12,23 @@
 #import <SDWebImage/SDImageCache.h>
 #import "XTFileManager.h"
 #import "UIImage+AddFunction.h"
-#import  "sys/utsname.h"
+#import "sys/utsname.h"
 #import <Photos/Photos.h>
 #import "XTlibConst.h"
-
-
-#define SCORE_STR_LOW @"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%@"
-#define SCORE_STR_HIGH @"itms-apps://itunes.apple.com/app/id%@"
+#import "UIView+XTAddition.h"
+#import "UIViewController+XTAddition.h"
 
 
 @implementation CommonFunc
+
++ (UIViewController *)topVC {
+    return [UIViewController xt_topViewController];
+}
+
++ (UIWindow *)topWindow {
+    return [UIView xt_topWindow];
+}
+
 
 #pragma mark-- save images to library
 
@@ -49,22 +56,6 @@
     } error:nil] ;
 }
 
-+ (void)saveImageToLibrary:(UIImage *)savedImage complete:(void(^)(bool success))complete {
-    [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
-        // 新建一个PHAssetCreationRequest对象, 保存图片到"相机胶卷"
-        // 返回PHAsset(图片)的字符串标识 NSString *assetId =
-        [PHAssetCreationRequest creationRequestForAssetFromImage:savedImage].placeholderForCreatedAsset.localIdentifier;
-    } completionHandler:^(BOOL success, NSError * _Nullable error) {
-        if (error) {
-            xt_LOG_DEBUG(@"保存图片到相机胶卷中失败");
-            if (complete) complete(NO) ;
-            return;
-        }
-        xt_LOG_DEBUG(@"成功保存图片到相机胶卷中");
-        if (complete) complete(YES) ;
-    }];
-}
-
 #pragma mark-- version
 
 + (NSString *)getVersionStrOfMyAPP {
@@ -82,105 +73,14 @@
     return [infoDictionary objectForKey:@"CFBundleDisplayName"];
 }
 
-#pragma mark--
-#pragma mark - 自动更新版本
-
-//+ (void)updateLatestVersion {
-////    if (!G_BOOL_OPEN_APPSTORE) return ;
-//
-//    dispatch_queue_t queue = dispatch_queue_create("versionQueue", NULL) ;
-//    dispatch_async(queue, ^{
-//        [self checkVersionRequest] ;
-//    }) ;
-//}
-
-//+ (void)checkVersionRequest {
-//    NSString *versionString = [self getVersionStrOfMyAPP] ;
-//
-//    NSString *strUrl = @"http://itunes.apple.com/lookup?id=999705868";
-//    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-//    [request setURL:[NSURL URLWithString:strUrl]];
-//    [request setHTTPMethod:@"POST"];
-//    NSHTTPURLResponse *urlResponse = nil;
-//    NSError *error = nil;
-//    NSData *recervedData = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&error];
-//    NSString *results = [[NSString alloc] initWithBytes:[recervedData bytes] length:[recervedData length] encoding:NSUTF8StringEncoding];
-////    xt_LOG_DEBUG(@"app : %@",results) ;
-//
-//    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[results dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil] ;
-//
-//    NSArray *infoArray = [dic objectForKey:@"results"];
-//    if ([infoArray count])
-//    {
-//        NSDictionary *releaseInfo = [infoArray firstObject];
-//        NSString *lastVersion = [releaseInfo objectForKey:@"version"];
-//
-//        BOOL bNeedUpdate = ([versionString compare:lastVersion] == NSOrderedAscending) ;
-//
-//        if ( bNeedUpdate )
-//        {
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                NSString *updateUrl = [releaseInfo objectForKey:@"trackViewUrl"] ;
-//                NSString *releaseNotes = [releaseInfo objectForKey:@"releaseNotes"] ;
-//
-//                /*
-//                XTSIAlertView *alertView = [[XTSIAlertView alloc] initWithTitle:@"速报酱有新版本"
-//                                                                 andMessage:releaseNotes] ;
-//
-//                [alertView addButtonWithTitle:@"不去"
-//                                         type:XTSIAlertViewButtonTypeDefault
-//                                      handler:^(XTSIAlertView *alertView) {
-//                                      }] ;
-//                [alertView addButtonWithTitle:@"去更新了"
-//                                         type:XTSIAlertViewButtonTypeDestructive
-//                                      handler:^(XTSIAlertView *alertView) {
-//                                          NSURL *url = [NSURL URLWithString:updateUrl];
-//                                          [[UIApplication sharedApplication]openURL:url];
-//                                      }] ;
-//                [alertView show] ;
-//                */
-//            }) ;
-//        }
-//        else
-//        {
-//            xt_LOG_DEBUG(@"此版本为最新版本") ;
-//        }
-//    }
-//}
-
-#pragma mark - give app a Score
-
-+ (void)scoringMyAppWithAppStoreID:(NSString *)appstoreID {
-    NSString *str = IS_IOS_VERSION(7.0) ? [NSString stringWithFormat:SCORE_STR_HIGH, appstoreID] : [NSString stringWithFormat:SCORE_STR_LOW, appstoreID];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
++ (NSDictionary *)getAppInfo {
+    return [[NSBundle mainBundle] infoDictionary];
 }
 
 
-#pragma mark--
-#pragma mark - CLLocation  get current location
-+ (CLLocationCoordinate2D)getLocation {
-    CLLocationManager *lm = [[CLLocationManager alloc] init];
-    [lm setDesiredAccuracy:kCLLocationAccuracyBest];
-    lm.distanceFilter = 1000.0f;
-    [lm startUpdatingLocation];
 
-    CLLocationCoordinate2D orgCoordinate;
-    orgCoordinate.longitude = lm.location.coordinate.longitude;
-    orgCoordinate.latitude  = lm.location.coordinate.latitude;
-    [lm stopUpdatingLocation];
 
-    return orgCoordinate;
-}
 
-#pragma mark-- 关闭应用
-
-+ (void)shutDownAppWithCtrller:(UIViewController *)ctrller {
-    [UIView animateWithDuration:0.65f animations:^{
-        ctrller.view.window.alpha = 0 ;
-    } completion:^(BOOL finished) {
-        exit(0) ;
-    }] ;
-}
 
 
 // 获取设备型号然后手动转化为对应名称
@@ -288,6 +188,15 @@
         return YES;
     }
     return NO;
+}
+
+
++ (void)shutDownAppWithCtrller:(UIViewController *)ctrller {
+    [UIView animateWithDuration:0.65f animations:^{
+        ctrller.view.window.alpha = 0 ;
+    } completion:^(BOOL finished) {
+        exit(0) ;
+    }] ;
 }
 
 @end
