@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XTPhotoSaver : NSObject
 
-- (void)saveImage:(UIImage *)image inAlbum:(NSString *)albumName ;
++ (void)saveImage:(UIImage *)image inAlbum:(NSString *)albumName ;
 
 @end
 

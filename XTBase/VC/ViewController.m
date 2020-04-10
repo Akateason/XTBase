@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    XTPhotoSaver *saver = [XTPhotoSaver new];
-    [saver saveImage:[UIImage imageNamed:@"kobe"] inAlbum:@"科比"];
+    
+
 }
 
 

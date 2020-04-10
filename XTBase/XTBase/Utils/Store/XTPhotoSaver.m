@@ -15,7 +15,7 @@
 /**
  *  先获得之前创建过的相册
  */
-- (PHAssetCollection *)getCollectionNamed:(NSString *)albumName {
++ (PHAssetCollection *)getCollectionNamed:(NSString *)albumName {
     PHFetchResult<PHAssetCollection *> *collectionResult = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
     for (PHAssetCollection *collection in collectionResult) {
         if ([collection.localizedTitle isEqualToString:albumName]) {
@@ -39,7 +39,7 @@
  PHAsset : 一个PHAsset对象就代表一个资源文件,比如一张图片
  PHAssetCollection : 一个PHAssetCollection对象就代表一个相册
  */
-- (void)saveImage:(UIImage *)image inAlbum:(NSString *)albumName {
++ (void)saveImage:(UIImage *)image inAlbum:(NSString *)albumName {
     __block NSString *assetId = nil;
     // 1. 存储图片到"相机胶卷"
     // 这个block里保存一些"修改"性质的代码
