@@ -61,6 +61,7 @@
 #import "XTFileManager.h"
 #import "XTArchive.h"
 #import "ValetManager.h"
+#import "XTPhotoSaver.h"
 #import "XTJson.h"
 #import "XTVerification.h"
 #import "XTMutableArray.h"

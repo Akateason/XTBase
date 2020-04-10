@@ -29,33 +29,6 @@
     return [UIView xt_topWindow];
 }
 
-
-#pragma mark-- save images to library
-
-/**
- * 创建相册
- */
-+ (void)albumWithName:(NSString *)albumName blkGetAlbum:(void(^)(PHAssetCollection *album))blkGetAlbum {
-    PHFetchResult<PHAssetCollection *> *collectionResult = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
-    for (PHAssetCollection *collection in collectionResult) {
-        if ([collection.localizedTitle isEqualToString:albumName]) {
-            blkGetAlbum(collection) ;
-            return ;
-        }
-    }
-    
-    
-    // 如果相册不存在,就创建新的相册(文件夹)
-    __block NSString *collectionId = nil; // __block修改block外部的变量的值
-    // 这个方法会在相册创建完毕后才会返回
-    [[PHPhotoLibrary sharedPhotoLibrary] performChangesAndWait:^{
-        // 新建一个PHAssertCollectionChangeRequest对象, 用来创建一个新的相册
-        collectionId = [PHAssetCollectionChangeRequest creationRequestForAssetCollectionWithTitle:albumName].placeholderForCreatedAssetCollection.localIdentifier;
-        
-        blkGetAlbum([PHAssetCollection fetchAssetCollectionsWithLocalIdentifiers:@[collectionId] options:nil].firstObject) ;
-    } error:nil] ;
-}
-
 #pragma mark-- version
 
 + (NSString *)getVersionStrOfMyAPP {

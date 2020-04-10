@@ -17,12 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-
     
-
-    
+    XTPhotoSaver *saver = [XTPhotoSaver new];
+    [saver saveImage:[UIImage imageNamed:@"kobe"] inAlbum:@"科比"];
 }
 
 
 @end
+   
+
