@@ -50,7 +50,7 @@
 #import "UITextView+XT.h"
 #import "NSAttributedString+XT.h"
 #import "UIImage+XT.h"
-
+#import "UIControl+XTAddition.h"
 
 
 // Util

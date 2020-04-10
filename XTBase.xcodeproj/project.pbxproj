@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F0BC5CC244016D4007F80E9 /* UIControl+XTAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0BC5CB244016D4007F80E9 /* UIControl+XTAddition.m */; };
 		8F221F792358671700CEB935 /* UIImage+XT.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F221F782358671700CEB935 /* UIImage+XT.m */; };
 		8F221F7C2358702E00CEB935 /* ImageDoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F221F7B2358702E00CEB935 /* ImageDoVC.m */; };
 		8F296FA521DF4567002778DF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8F296FA421DF4567002778DF /* README.md */; };
@@ -65,6 +66,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F0BC5CA244016D4007F80E9 /* UIControl+XTAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+XTAddition.h"; sourceTree = "<group>"; };
+		8F0BC5CB244016D4007F80E9 /* UIControl+XTAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XTAddition.m"; sourceTree = "<group>"; };
 		8F221F772358671700CEB935 /* UIImage+XT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+XT.h"; sourceTree = "<group>"; };
 		8F221F782358671700CEB935 /* UIImage+XT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XT.m"; sourceTree = "<group>"; };
 		8F221F7A2358702E00CEB935 /* ImageDoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageDoVC.h; sourceTree = "<group>"; };
@@ -339,6 +342,8 @@
 				8F89E7E4219E926C009B3281 /* UILabel+Calculate.m */,
 				8F89E7E5219E926C009B3281 /* UIView+XTAddition.h */,
 				8F89E802219E926C009B3281 /* UIView+XTAddition.m */,
+				8F0BC5CA244016D4007F80E9 /* UIControl+XTAddition.h */,
+				8F0BC5CB244016D4007F80E9 /* UIControl+XTAddition.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -606,6 +611,7 @@
 				8F5D5D5F21B77EBF003960E4 /* XTTextField.m in Sources */,
 				8F89E85D219E926C009B3281 /* PlistUtil.m in Sources */,
 				8FE27318219E78C4009DA0CE /* ViewController.m in Sources */,
+				8F0BC5CC244016D4007F80E9 /* UIControl+XTAddition.m in Sources */,
 				8F89E831219E926C009B3281 /* Base64.m in Sources */,
 				8F89E854219E926C009B3281 /* NSArray+XT.m in Sources */,
 				8F89E841219E926C009B3281 /* UIImageView+QNExtention.m in Sources */,
