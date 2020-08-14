@@ -51,7 +51,7 @@
 #import "NSAttributedString+XT.h"
 #import "UIImage+XT.h"
 #import "UIControl+XTAddition.h"
-
+#import "UIImageView+XtHugeImageDownsize.h"
 
 // Util
 #import "NSString+MD5.h"
