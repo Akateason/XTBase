@@ -63,6 +63,7 @@
 		8FE2731D219E78C6009DA0CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE2731C219E78C6009DA0CE /* Assets.xcassets */; };
 		8FE27320219E78C6009DA0CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE2731E219E78C6009DA0CE /* LaunchScreen.storyboard */; };
 		8FE27323219E78C6009DA0CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE27322219E78C6009DA0CE /* main.m */; };
+		8FE9C32024E550E70031050A /* UIImageView+XtHugeImageDownsize.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE9C31F24E550E70031050A /* UIImageView+XtHugeImageDownsize.m */; };
 		FDEA13C7DF14B22EA5D1B497 /* Pods_XTBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C900BA4C98787315E4667519 /* Pods_XTBase.framework */; };
 /* End PBXBuildFile section */
 
@@ -180,6 +181,8 @@
 		8FE2731F219E78C6009DA0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FE27321219E78C6009DA0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FE27322219E78C6009DA0CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8FE9C31E24E550E70031050A /* UIImageView+XtHugeImageDownsize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+XtHugeImageDownsize.h"; sourceTree = "<group>"; };
+		8FE9C31F24E550E70031050A /* UIImageView+XtHugeImageDownsize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+XtHugeImageDownsize.m"; sourceTree = "<group>"; };
 		C900BA4C98787315E4667519 /* Pods_XTBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D847D292B8C0D5138D650279 /* Pods-XTBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XTBase/Pods-XTBase.debug.xcconfig"; sourceTree = "<group>"; };
 		FB30FE23562936057118B3A1 /* Pods-XTBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-XTBase/Pods-XTBase.release.xcconfig"; sourceTree = "<group>"; };
@@ -339,6 +342,8 @@
 				8F89E7FD219E926C009B3281 /* UIImage+AddFunction.m */,
 				8F89E801219E926C009B3281 /* UIImageView+QNExtention.h */,
 				8F89E7E1219E926C009B3281 /* UIImageView+QNExtention.m */,
+				8FE9C31E24E550E70031050A /* UIImageView+XtHugeImageDownsize.h */,
+				8FE9C31F24E550E70031050A /* UIImageView+XtHugeImageDownsize.m */,
 				8F89E7E2219E926C009B3281 /* UIResponder+ChainHandler.h */,
 				8F89E800219E926C009B3281 /* UIResponder+ChainHandler.m */,
 				8F89E803219E926C009B3281 /* UILabel+Calculate.h */,
@@ -653,6 +658,7 @@
 				8F89E851219E926C009B3281 /* NSDate+NSCalendar.m in Sources */,
 				8F89E860219E926C009B3281 /* XTlibConfig.m in Sources */,
 				8F89E838219E926C009B3281 /* MyTextView.m in Sources */,
+				8FE9C32024E550E70031050A /* UIImageView+XtHugeImageDownsize.m in Sources */,
 				8F89E853219E926C009B3281 /* XTVerification.m in Sources */,
 				8F89E857219E926C009B3281 /* NSObject+XTRuntime.m in Sources */,
 				8F80A41A21AC070A00FA720C /* XTMutableArray.m in Sources */,
