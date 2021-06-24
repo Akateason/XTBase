@@ -11,9 +11,9 @@
 
 @interface UIResponder (ChainHandler)
 
-- (void)sendChainHandler:(NSString *)identifier info:(id)info;
-- (void)sendChainHandler:(NSString *)identifier info:(id)info sender:(id)sender;
+- (void)xt_messageOnChain:(NSString *)name
+                    param:(NSDictionary *)param;
 
-- (BOOL)receiveHandleChain:(NSString *)identifier info:(id)info sender:(id)sender;
+- (UIResponder *)xt_findNext:(Class)cls ;
 
 @end

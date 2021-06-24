@@ -11,16 +11,21 @@
 
 @implementation UIResponder (ChainHandler)
 
-- (void)sendChainHandler:(NSString *)identifier info:(id)info {
-    if ([self receiveHandleChain:identifier info:info sender:nil] && self.nextResponder) [self.nextResponder sendChainHandler:identifier info:info sender:nil];
+- (void)xt_messageOnChain:(NSString *)name
+                 param:(NSDictionary *)param {
+    [self.nextResponder xt_messageOnChain:name param:param];
 }
 
-- (void)sendChainHandler:(NSString *)identifier info:(id)info sender:(id)sender {
-    if ([self receiveHandleChain:identifier info:info sender:sender] && self.nextResponder) [self.nextResponder sendChainHandler:identifier info:info sender:sender];
+- (UIResponder *)xt_findNext:(Class)cls {
+    UIResponder *responder = self;
+    while (responder != nil) {
+        if ([responder isKindOfClass:cls]) {
+            return responder;
+        }
+        responder = [responder nextResponder];
+    }
+    return nil;
 }
 
-- (BOOL)receiveHandleChain:(NSString *)identifier info:(id)info sender:(id)sender {
-    return YES;
-}
 
 @end
