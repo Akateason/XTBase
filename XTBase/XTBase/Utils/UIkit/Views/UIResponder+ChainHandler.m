@@ -11,8 +11,7 @@
 
 @implementation UIResponder (ChainHandler)
 
-- (void)xt_messageOnChain:(NSString *)name
-                 param:(NSDictionary *)param {
+- (void)xt_messageOnChain:(NSString *)name param:(NSDictionary *)param {
     [self.nextResponder xt_messageOnChain:name param:param];
 }
 
